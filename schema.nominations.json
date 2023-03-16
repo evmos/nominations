@@ -1,129 +1,157 @@
 {
-  "$schema": "https://json-schema.org/draft/2019-09/schema",
-  "type": "object",
-  "default": {},
-  "title": "Validator Nominations Schema",
-  "required": [
-      "nominatorMoniker",
-      "nominatorValidatorAddress",
-      "nominations",
-      "date"
-  ],
-  "properties": {
-      "nominatorMoniker": {
-          "type": "string",
-          "default": "",
-          "title": "The nominatorMoniker Schema",
-          "examples": [
-              "Polkachu"
-          ]
-      },
-      "nominatorValidatorAddress": {
-          "type": "string",
-          "default": "",
-          "title": "The nominatorValidatorAddress Schema",
-          "examples": [
-              "evmosvaloper125fkz3mq6qxxpkmphdl3ep92t0d3y969xmt8hz"
-          ]
-      },
-      "nominations": {
-          "type": "array",
-          "default": [],
-          "maxItems": 3,
-          "minItems": 1,
-          "uniqueItems": true,
-          "title": "The nominations Schema",
-          "items": {
-              "type": "object",
-              "title": "Nominations Schema",
-              "required": [
-                  "moniker",
-                  "validatorAddress"
-              ],
-              "properties": {
-                  "moniker": {
-                      "type": "string",
-                      "title": "The moniker Schema",
-                      "examples": [
-                          ""
-                      ]
-                  },
-                  "validatorAddress": {
-                      "type": "string",
-                      "title": "The validatorAddress Schema",
-                      "examples": [
-                          ""
-                      ]
-                  },
-                  "note": {
-                      "type": "string",
-                      "title": "The note Schema",
-                      "examples": [
-                          ""
-                      ]
-                  }
-              },
-              "examples": [{
-                  "moniker": "",
-                  "validatorAddress": "",
-                  "note": ""
-              },
-              {
-                  "moniker": "",
-                  "validatorAddress": "",
-                  "note": ""
-              },
-              {
-                  "moniker": "",
-                  "validatorAddress": "",
-                  "note": ""
-              }]
-          },
-          "examples": [
-              [{
-                  "moniker": "",
-                  "validatorAddress": "",
-                  "note": ""
-              },
-              {
-                  "moniker": "",
-                  "validatorAddress": "",
-                  "note": ""
-              },
-              {
-                  "moniker": "",
-                  "validatorAddress": "",
-                  "note": ""
-              }]
-          ]
-      },
-      "date": {
-          "type": "string",
-          "default": "",
-          "title": "The date Schema",
-          "examples": [
-              "2023-03-31"
-          ]
-      }
-  },
-  "examples": [{
-      "nominatorMoniker": "Polkachu",
-      "nominatorValidatorAddress": "evmosvaloper125fkz3mq6qxxpkmphdl3ep92t0d3y969xmt8hz",
-      "nominations": [{
-          "moniker": "",
-          "validatorAddress": "",
-          "note": ""
-      },
-      {
-          "moniker": "",
-          "validatorAddress": "",
-          "note": ""
-      },
-      {
-          "moniker": "",
-          "validatorAddress": "",
-          "note": ""
-      }],
-      "date": "2023-03-31"
-  }]
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "type": "object",
+    "default": {},
+    "title": "Validator Nominations Schema",
+    "required": [
+        "nominations"
+    ],
+    "properties": {
+        "nominations": {
+            "type": "array",
+            "default": [],
+            "title": "The nominations Schema",
+            "items": {
+                "nominatorMoniker": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The nominatorMoniker Schema",
+                    "examples": [
+                        "Polkachu"
+                    ]
+                },
+                "nominatorValidatorAddress": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The nominatorValidatorAddress Schema",
+                    "examples": [
+                        "evmosvaloper125fkz3mq6qxxpkmphdl3ep92t0d3y969xmt8hz"
+                    ]
+                },
+                "nominations": {
+                    "type": "array",
+                    "default": [],
+                    "maxItems": 3,
+                    "minItems": 1,
+                    "uniqueItems": true,
+                    "title": "The nominations Schema",
+                    "items": {
+                        "type": "object",
+                        "title": "Nominations Schema",
+                        "required": [
+                            "moniker",
+                            "validatorAddress"
+                        ],
+                        "properties": {
+                            "moniker": {
+                                "type": "string",
+                                "title": "The moniker Schema",
+                                "examples": [
+                                    ""
+                                ]
+                            },
+                            "validatorAddress": {
+                                "type": "string",
+                                "title": "The validatorAddress Schema",
+                                "examples": [
+                                    ""
+                                ]
+                            },
+                            "note": {
+                                "type": "string",
+                                "title": "The note Schema",
+                                "examples": [
+                                    ""
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "moniker": "",
+                            "validatorAddress": "",
+                            "note": ""
+                        },
+                        {
+                            "moniker": "",
+                            "validatorAddress": "",
+                            "note": ""
+                        },
+                        {
+                            "moniker": "",
+                            "validatorAddress": "",
+                            "note": ""
+                        }]
+                    },
+                    "examples": [
+                        [{
+                            "moniker": "",
+                            "validatorAddress": "",
+                            "note": ""
+                        },
+                        {
+                            "moniker": "",
+                            "validatorAddress": "",
+                            "note": ""
+                        },
+                        {
+                            "moniker": "",
+                            "validatorAddress": "",
+                            "note": ""
+                        }]
+                    ]
+                },
+                "date": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The date Schema",
+                    "examples": [
+                        "2023-03-31"
+                    ]
+                }
+            },
+            "examples": [
+                [{
+                    "nominatorMoniker": "Polkachu",
+                    "nominatorValidatorAddress": "evmosvaloper125fkz3mq6qxxpkmphdl3ep92t0d3y969xmt8hz",
+                    "nominations": [{
+                        "moniker": "",
+                        "validatorAddress": "",
+                        "note": ""
+                    },
+                    {
+                        "moniker": "",
+                        "validatorAddress": "",
+                        "note": ""
+                    },
+                    {
+                        "moniker": "",
+                        "validatorAddress": "",
+                        "note": ""
+                    }],
+                    "date": "2023-03-31"
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "nominations": [{
+            "nominatorMoniker": "Polkachu",
+            "nominatorValidatorAddress": "evmosvaloper125fkz3mq6qxxpkmphdl3ep92t0d3y969xmt8hz",
+            "nominations": [{
+                "moniker": "",
+                "validatorAddress": "",
+                "note": ""
+            },
+            {
+                "moniker": "",
+                "validatorAddress": "",
+                "note": ""
+            },
+            {
+                "moniker": "",
+                "validatorAddress": "",
+                "note": ""
+            }],
+            "date": "2023-03-31"
+        }]
+    }]
 }
