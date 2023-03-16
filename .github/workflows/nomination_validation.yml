@@ -14,4 +14,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           json_schema: ./schema.nominations.json
-          json_path_pattern: nominations/cycle*/nominations.json$
+          json_path_pattern: nominations/cycle[0-9][0-9]/nominations.json$
