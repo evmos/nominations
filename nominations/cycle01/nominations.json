@@ -1,1 +1,26 @@
-{"nominations": []}
+{
+  "nominations": [
+    {
+      "nominatorMoniker": "Polkachu",
+      "nominatorValidatorAddress": "evmosvaloper125fkz3mq6qxxpkmphdl3ep92t0d3y969xmt8hz",
+      "nominations": [
+        {
+          "moniker": "",
+          "validatorAddress": "",
+          "note": ""
+        },
+        {
+          "moniker": "",
+          "validatorAddress": "",
+          "note": ""
+        },
+        {
+          "moniker": "",
+          "validatorAddress": "",
+          "note": ""
+        }
+      ],
+      "date": "2023-03-31"
+    }
+  ]
+}
